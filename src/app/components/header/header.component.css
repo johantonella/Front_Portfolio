@@ -1,0 +1,8 @@
+div{
+  background:linear-gradient(to right, hwb(290 53% 5%) 5%,hsl(230, 84%, 83%) 80%);
+}
+app-redes{
+  float: right;
+  margin-top: 20px;
+}
+

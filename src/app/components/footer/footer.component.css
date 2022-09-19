@@ -1,0 +1,14 @@
+.row{
+  background-color: #a6a6a6;
+}
+footer{
+  display:inline;
+  color: #ffffff;
+  font-family: "Ubuntu", 微軟正黑體;
+  font-weight: 500px;
+  font-size: 10px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

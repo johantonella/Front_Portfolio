@@ -1,0 +1,57 @@
+.row{
+  padding: 10px;
+
+}
+div{
+  background-color: #F7DBDF;
+}
+#about{
+  font-weight: 500;
+  font-family: "Ubuntu", 微軟正黑體;
+  color: #999898;
+  padding: 50px;
+  text-align:right;
+}
+.title_hr {
+  border: solid 3px #F3ABA6;
+  margin-left: auto;
+  width: 100px;
+  position: relative;
+}
+
+/*Estilo Foto Perfil*/
+@media(min-width:576px){
+  #fotoperfil{
+    position:absolute;
+    width: 13%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+    left: 2%;
+    top: 600px;
+  }
+}
+@media(max-width:575px){
+  #fotoperfil{
+    position:absolute;
+    width: 30%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+    left: 33%;
+    top: 950px;
+  }
+}
+
+/*Etiqueta Nombre*/
+#nombre{
+  font-weight:bold;
+  margin-top: 40%;
+  font-family: "Ubuntu", 微軟正黑體;
+  color: #999898;
+  text-align:center;
+}
+#full{
+  text-align:center;
+  color: #999898;
+  font-family: "Ubuntu", 微軟正黑體;
+}
+

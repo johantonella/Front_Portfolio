@@ -1,0 +1,36 @@
+.row{
+  padding: 10px;
+}
+div{
+  background-color: #ffffff;
+}
+#educacion{
+
+  display:inline;
+  color: #F3ABA6;
+  font-family: "Ubuntu", 微軟正黑體;
+  font-weight: 500px;
+  padding: 50px;
+  text-align:left;
+}
+.lista{
+  display: inline;
+  color: #999898;
+  margin-top: 15px;
+  margin-left: -20px;
+  font-family: "Ubuntu", 微軟正黑體;
+  font-weight: 500px;
+  text-align: left;
+}
+
+p{
+  text-align: right;
+  font-weight: 500px;
+  font-family: "Ubuntu", 微軟正黑體;
+}
+.title_hr {
+  border: solid 3px #999898;
+  margin-right: 15px;
+  width: 100px;
+  position: relative;
+}
