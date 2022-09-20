@@ -17,6 +17,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HttpClientModule } from '@angular/common/http';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 
 
 
@@ -34,7 +35,8 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
     HySComponent,
     FooterComponent,
     HomeComponent,
-    NewExperienciaComponent
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
