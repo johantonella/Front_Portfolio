@@ -18,7 +18,7 @@ export class EditeducacionComponent implements OnInit {
     this.educacionS.detail(id).subscribe(data =>{
       this.educacion = data;
     }, err =>{
-      alert("Error al modificar");
+      alert("Error al modificar educacion");
       this.router.navigate(['']);
     })
   }
