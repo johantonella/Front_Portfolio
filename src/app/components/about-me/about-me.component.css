@@ -1,31 +1,68 @@
+
 .row{
-  padding: 10px;
+background: linear-gradient(#aa98eb, #F3ABA6 );
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment: fixed;
 
 }
-div{
-  background-color: #F7DBDF;
+
+#nombre{
+  margin-top: 40%;
+  font-family:"Lora";
+  font-size:25px;
+  color:rgb(77, 59, 100);
+  text-align:center;
 }
-#about{
+
+#full{
+  text-align:center;
+  color:rgb(77, 59, 100);
+  font-family:"Lora";
+  font-size:20px;
+}
+
+
+.about{
   font-weight: 500;
-  font-family: "Ubuntu", 微軟正黑體;
-  color: #999898;
-  padding: 50px;
-  text-align:right;
-}
-.title_hr {
-  border: solid 3px #F3ABA6;
-  margin-left: auto;
-  width: 100px;
-  position: relative;
+  font-family: "Lora";
+  padding: 30px;
 }
 
-/*Estilo Foto Perfil*/
+.title_hr {
+  border: solid 3px #6945eb;
+  width: 100px;
+  margin-top: -30px;
+  margin-left: 1.8em;
+  position:relative;
+}
+
+
+.card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); ;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(5px);
+  margin: 100px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.img{
+  position:relative;
+  top:auto;
+  left: 5px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px rgb(32, 86, 185);
+  margin: 30%;
+}
+
 @media(min-width:576px){
   #fotoperfil{
     position:absolute;
     width: 13%;
     border-radius: 100%;
-    box-shadow: 3px 3px 3px grey;
+    box-shadow: 2px 2px 2px rgb(32, 86, 185);
     left: 2%;
     top: 600px;
   }
@@ -35,23 +72,9 @@ div{
     position:absolute;
     width: 30%;
     border-radius: 100%;
-    box-shadow: 3px 3px 3px grey;
+    box-shadow: 2px 2px 2px rgb(32, 86, 185);
     left: 33%;
-    top: 950px;
+    top: 900px;
   }
-}
-
-/*Etiqueta Nombre*/
-#nombre{
-  font-weight:bold;
-  margin-top: 40%;
-  font-family: "Ubuntu", 微軟正黑體;
-  color: #999898;
-  text-align:center;
-}
-#full{
-  text-align:center;
-  color: #999898;
-  font-family: "Ubuntu", 微軟正黑體;
 }
 

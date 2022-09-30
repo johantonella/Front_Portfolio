@@ -3,14 +3,14 @@
     <div>
       <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
         <div class="form-group">
-         <label for="nombre">Nombre de la Skill</label>
+         <label for="nombre"><h3>Nombre de la Skill</h3></label>
          <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="skill.nombre" required>
+        <br>
+        <label for="porcentaje"><h3>Porcentaje</h3></label>
+        <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required>
+        <br>
+        <button class="btn btn-secondary">Actualizar</button>
         </div>
-        <div class="form-group">
-          <label for="porcentaje">Porcentaje</label>
-          <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required>
-         </div>
-         <button class="btn btn-secondary">Actualizar</button>
       </form>
     </div>
   </div>

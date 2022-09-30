@@ -1,9 +1,33 @@
 .row{
-  padding: 10px;
+  background: linear-gradient(rgb(17, 17, 156),rgb(99, 5, 153));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+
 }
-div{
-  background-color: #999898;
+
+.card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); ;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  margin: 100px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.experiencia{
+  font-weight: 500;
+  font-family: "ChicagoFLF";
+  padding: 50px;
+  text-align:right;
+}
+.title_hr {
+  border: solid 3px #F3ABA6;
+  margin-left: auto;
+  width: 100px;
+  position: relative;
+}
+
 
 /*
 #experiencia{

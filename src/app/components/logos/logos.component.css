@@ -4,13 +4,16 @@
   align-items: center;
 }
 .redes{
+  letter-spacing: -0.35em;
   margin-right: 0.8em;
 }
 #logoAP{
   width: 160px;
 }
 img{
-  width: 45px;
+  width: 40px;
+  margin-right: 10px;
+  margin-left: 1,5px;
 }
 
 /*--Boton con Borde en Gradiente de colores--*/

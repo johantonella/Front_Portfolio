@@ -1,8 +1,16 @@
 <div class="row">
-  <h1>Educación</h1>
-  <div class="col-lg-2">
-    <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Educación</button>
-</div>
+  <div class="container-fluid">
+
+      <!--Card Glass-->
+      <div class="card card-body" style="justify-content: center">
+
+
+        <div class="educacion" ><h1>Educación</h1>
+        <div class="title_hr"></div>
+        <br>
+        <div class="col-lg-2">
+          <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Educación</button>
+        </div>
 
 <div class="col-lg-1"></div>
 <div class="col-lg-11">
@@ -12,12 +20,12 @@
         <td><h2>{{Educacion.nombreE}}</h2></td>
         <td><h2>{{Educacion.descripcionE}}</h2></td>
         <td *ngIf="isLogged">
-          <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
-        <i class="bi bi-pencil"></i>Editar</button></td>
+          <button class="btn" routerLink="/editedu/{{Educacion.id}}">
+            <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/pencil--v1.png"/></button></td>
 
         <td *ngIf="isLogged">
-            <button class="btn btn-danger" (click)="delete(Educacion.id)">
-              <i class="bi bi-trash-fill"></i>Borrar</button></td>
+          <button class="btn" (click)="delete(Educacion.id)">
+            <img src="https://img.icons8.com/windows/32/FFFFFF/trash.png"/></button></td>
           </tr>
         </tbody>
       </table>

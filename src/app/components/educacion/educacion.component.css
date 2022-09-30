@@ -1,36 +1,31 @@
 .row{
-  padding: 10px;
-}
-div{
-  background-color: #ffffff;
-}
-#educacion{
+  background: linear-gradient(rgb(17, 17, 156),rgb(99, 5, 153));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
 
-  display:inline;
-  color: #F3ABA6;
-  font-family: "Ubuntu", 微軟正黑體;
-  font-weight: 500px;
+}
+
+.card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); ;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  margin: 100px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.educacion{
+  font-weight: 500;
+  font-family: "ChicagoFLF";
   padding: 50px;
-  text-align:left;
-}
-.lista{
-  display: inline;
-  color: #999898;
-  margin-top: 15px;
-  margin-left: -20px;
-  font-family: "Ubuntu", 微軟正黑體;
-  font-weight: 500px;
-  text-align: left;
+  text-align:right;
 }
 
-p{
-  text-align: right;
-  font-weight: 500px;
-  font-family: "Ubuntu", 微軟正黑體;
-}
+
 .title_hr {
-  border: solid 3px #999898;
-  margin-right: 15px;
+  border: solid 3px #F3ABA6;
+  margin-left: auto;
   width: 100px;
   position: relative;
 }

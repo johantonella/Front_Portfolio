@@ -1,5 +1,31 @@
 .row{
-  padding: 10px;
+  background: linear-gradient(rgb(17, 17, 156),rgb(99, 5, 153));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+
+}
+
+.card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); ;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  margin: 100px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hys{
+  font-weight: 500;
+  font-family: "ChicagoFLF";
+  padding: 50px;
+  text-align:right;
+}
+.title_hr {
+  border: solid 3px #F3ABA6;
+  margin-left: auto;
+  width: 100px;
+  position: relative;
 }
 
 .circulo{
@@ -8,25 +34,4 @@
   align-items: center;
 }
 
-/*
-div{
-  background-color: #ffffff
-}
-
-#titulo{
-  text-align:left;
-  font-family: "Ubuntu", 微軟正黑體;
-  color:#F3ABA6;
-  font-weight: 500px;
-  padding: 50px;
-  text-align: left;
-}
-
-.title_hr{
-  border: solid 3px #999898;
-  margin-right: 15px;
-  width: 100px;
-  position: relative;
-}
-*/
 

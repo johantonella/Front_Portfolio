@@ -1,18 +1,49 @@
 .row{
-  padding: 10px;
-  background-color: #F7DBDF;
+  background: linear-gradient(rgb(17, 17, 156),rgb(99, 5, 153));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+
 }
-#proyecto{
-  display:inline;
-  color: #999898;
-  font-family: "Ubuntu", 微軟正黑體;
-  font-weight: 500px;
+
+.card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); ;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  margin: 100px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.proyectos{
+  font-weight: 100;
+  font-family: "ChicagoFLF";
   padding: 50px;
-  text-align:left;
+  text-align:center;
 }
+
 .title_hr {
-  border: solid 3px  #F3ABA6;
-  margin-right: 15px;
+  border: solid 3px #F3ABA6;
+  margin-left: auto;
   width: 100px;
   position: relative;
 }
+
+.flex-center{
+  align-items:center;
+  flex-direction: column-reverse;
+}
+
+
+@media(min-width:576px){
+.row-cols-1, .row-cols-md-3, .g-4{
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+  }
+}
+

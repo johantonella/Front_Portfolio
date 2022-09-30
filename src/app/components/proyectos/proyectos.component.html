@@ -1,7 +1,43 @@
 <div class="row">
-  <div class="col-lg-1"></div><div class="col-lg-11" id="proyecto">
-    <h1><strong>PROYECTOS REALIZADOS</strong></h1>
-    <div class="title_hr"></div>
-    <br>
-    <br>
-    </div>
+
+  <!--Card Glass-->
+  <div class="card card-body" style="justify-content: center">
+
+ <div class="proyectos" ><h1>Proyectos Realizados</h1>
+   <div class="title_hr"></div>
+   <br>
+
+
+<!--
+  <div class="col-lg-1"></div><div class="col-lg-11">
+
+    <div class="container">
+      <div class="row flex-center g-5 py-5">
+        <div class="col-lg-6">
+            <div>
+              <input id="formFileLg" type="file"(change)="subirArchivo($event)" class="form-control form-control-lg" >
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container mb-5" >
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          -->
+          <div *ngFor="let image of images" class="col">
+            <div class="card h-100">
+              <img [src]="image" class="card-img-top" alt="...">
+              <p class="card-text align-center">PÁGINA WEB</p>
+              <p>Diseño y elaboracíon de una Web Page utilizando HTML, CSS Y JS.</p>
+            </div>
+            <!--
+            <br>
+            <br>
+            <div *ngFor="let image of images" class="col">
+              <div class="card h-100">
+                <img [src]="image" class="card-img-top" alt="...">
+                <p class="card-text align-center">PORTFOLIO WEB</p>
+              </div>
+            -->
+
