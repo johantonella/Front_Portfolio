@@ -1,14 +1,26 @@
 .row{
-  background-color: #a6a6a6;
-}
-footer{
-  display:inline;
-  color: #ffffff;
-  font-family: "Ubuntu", 微軟正黑體;
-  font-weight: 500px;
-  font-size: 10px;
-  padding: 50px;
+  background: linear-gradient(270deg, #ffead1, #ffb6bd, #e0b5ff);
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: 150% 150%;
+  animation: backgroundAnimation 10s ease infinite;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  align-content: center;
 }
+
+
+
+.h5, p{
+  text-align: center;
+  color: #ffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+
+
+

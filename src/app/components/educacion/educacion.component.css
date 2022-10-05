@@ -1,31 +1,72 @@
 .row{
-  background: linear-gradient(rgb(17, 17, 156),rgb(99, 5, 153));
+  background: linear-gradient(270deg, #ffead1, #ffb6bd, #e0b5ff);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-
+  background-attachment:local;
+  background-size: 150% 150%;
+  animation: backgroundAnimation 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  align-content: center;
 }
+
 
 .card {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); ;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(5px);
-  margin: 100px;
+  margin: 8em;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .educacion{
-  font-weight: 500;
-  font-family: "ChicagoFLF";
-  padding: 50px;
-  text-align:right;
+  font-weight: 500px;
+  font-family: "Montserrat", sans-serif;
+  padding: 30px;
+}
+
+.title_hr {
+  border: solid 3px #6945eb;
+  width: 100px;
+  margin-left: 0.2em;
+  position:relative;
 }
 
 
-.title_hr {
-  border: solid 3px #F3ABA6;
-  margin-left: auto;
-  width: 100px;
+/* Button */
+.button-13 {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
   position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.button-13:hover {
+  background-color: #f7fafa;
+}
+
+.button-13:focus {
+  border-color: #eceeee;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
 }

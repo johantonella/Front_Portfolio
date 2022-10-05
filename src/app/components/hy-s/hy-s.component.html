@@ -9,11 +9,10 @@
     <div class="hys" ><h1>Hard & Skill</h1>
       <div class="title_hr"></div>
       <br>
-
-
     <div class="col-lg-2">
-      <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
+      <button class="button-13" role="button"routerLink="/newskill" *ngIf="isLogged">Nueva Skill</button>
     </div>
+    <b>
 
     <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
       <circle-progress
@@ -38,13 +37,14 @@
 
     <div>
       <td *ngIf="isLogged">
-        <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
-          <i class="bi bi-pencil"></i></button></td>
+        <button class="btn" routerLink="/editskill/{{skill.id}}">
+        <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/pencil--v1.png"/></button></td>
+
+
 
           <td *ngIf="isLogged">
-            <button class="btn btn-danger" (click)="delete(skill.id)">
-              <i class="bi bi-trash-fill"></i></button></td>
+            <button class="btn" (click)="delete(skill.id)">
+              <img src="https://img.icons8.com/windows/32/FFFFFF/trash.png"/></button></td>
             </div>
           </div>
-        </div>
 

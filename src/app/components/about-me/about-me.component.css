@@ -1,15 +1,29 @@
-
 .row{
-background: linear-gradient(#aa98eb, #F3ABA6 );
+background: linear-gradient(270deg, #ffead1, #ffb6bd, #e0b5ff);
 background-repeat: no-repeat;
-background-size: 100%;
-background-attachment: fixed;
+background-attachment:local;
+background-size: 150% 150%;
+animation: backgroundAnimation 10s ease infinite;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
+margin: 0;
+}
 
+.card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); ;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(5px);
+  margin: 100px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #nombre{
   margin-top: 40%;
-  font-family:"Lora";
+  font-family:"Montserrat", sans-serif;
   font-size:25px;
   color:rgb(77, 59, 100);
   text-align:center;
@@ -18,14 +32,13 @@ background-attachment: fixed;
 #full{
   text-align:center;
   color:rgb(77, 59, 100);
-  font-family:"Lora";
+  font-family:"Montserrat", sans-serif;
   font-size:20px;
 }
 
-
 .about{
   font-weight: 500;
-  font-family: "Lora";
+  font-family: "Montserrat", sans-serif;
   padding: 30px;
 }
 
@@ -38,14 +51,6 @@ background-attachment: fixed;
 }
 
 
-.card {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); ;
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(5px);
-  margin: 100px;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
 
 .img{
   position:relative;
@@ -53,8 +58,9 @@ background-attachment: fixed;
   left: 5px;
   width: 150px;
   border-radius: 50%;
-  box-shadow: 2px 2px 2px rgb(32, 86, 185);
+
   margin: 30%;
+  box-shadow: 0px 0px 20px whitesmoke;
 }
 
 @media(min-width:576px){
@@ -62,9 +68,10 @@ background-attachment: fixed;
     position:absolute;
     width: 13%;
     border-radius: 100%;
-    box-shadow: 2px 2px 2px rgb(32, 86, 185);
+
     left: 2%;
     top: 600px;
+    box-shadow: 0px 0px 20px whitesmoke;
   }
 }
 @media(max-width:575px){
@@ -72,9 +79,10 @@ background-attachment: fixed;
     position:absolute;
     width: 30%;
     border-radius: 100%;
-    box-shadow: 2px 2px 2px rgb(32, 86, 185);
+
     left: 33%;
     top: 900px;
+    box-shadow: 0px 0px 20px whitesmoke;
   }
 }
 

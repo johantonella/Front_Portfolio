@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { LogosComponent } from './components/logos/logos.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { LoginComponent } from './components/login/login.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
@@ -25,13 +24,13 @@ import { NewSkillComponent } from './components/hy-s/new-skill.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
-import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LogosComponent,
     BannerComponent,
     LoginComponent,
     ExperienciaComponent,
@@ -46,9 +45,7 @@ import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
     NeweducacionComponent,
     EditeducacionComponent,
     EditSkillComponent,
-    NewSkillComponent,
-    DarkModeComponent
-
+    NewSkillComponent
   ],
   imports: [
     BrowserModule,
@@ -60,8 +57,7 @@ import { DarkModeComponent } from './components/dark-mode/dark-mode.component';
     provideStorage(() => getStorage())
   ],
 
-  providers: [
-  ],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

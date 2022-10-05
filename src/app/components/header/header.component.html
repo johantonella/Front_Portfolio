@@ -1,4 +1,18 @@
 <div class="row">
-  <app-logos></app-logos>
-  <app-banner></app-banner>
-</div>
+  <div class="container">
+    <div class="app-header">
+
+      <div class="app-header-left">
+        <img width="120px" src="../../../assets/APLogo.png" id="logoAP">
+        <p class="app-name">My Portfolio</p>
+      </div>
+
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/johanna-antonella-raffo-8a9564158/"><img src="https://img.icons8.com/ios/50/FFFFFF/linkedin-2--v1.png"/></a>
+        <a href="https://github.com/johantonella"><img src="https://img.icons8.com/ios/50/FFFFFF/github-2.png"/></a>
+      </div>
+
+      <button type="button" class="btn btn-outline" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+      <button type="button" class="btn btn-outline" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+
+

@@ -10,8 +10,9 @@
     <div class="title_hr"></div>
     <br>
   <div class="col-lg-2">
-    <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">Nueva Experiencia</button>
-</div>
+    <br>
+    <button  class="button-13" role="button"routerLink="/nuevaexp" *ngIf="isLogged">Agregar</button>
+  </div>
 
 <div class="col-lg-1"></div>
 <div class="col-lg-11">
@@ -21,12 +22,12 @@
         <td><h2>{{Experiencia.nombreE}}</h2></td>
         <td><h2>{{Experiencia.descripcionE}}</h2></td>
         <td *ngIf="isLogged">
-          <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
-        <i class="bi bi-pencil"></i>Editar</button></td>
+          <button class="btn" routerLink="/editexp/{{Experiencia.id}}">
+            <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/pencil--v1.png"/></button></td>
 
         <td *ngIf="isLogged">
-            <button class="btn btn-danger" (click)="delete(Experiencia.id)">
-              <i class="bi bi-trash-fill"></i>Borrar</button></td>
+            <button class="btn" (click)="delete(Experiencia.id)">
+              <img src="https://img.icons8.com/windows/32/FFFFFF/trash.png"/></button></td>
           </tr>
         </tbody>
       </table>

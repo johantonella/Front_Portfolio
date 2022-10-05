@@ -1,10 +1,96 @@
-div{
-  background:#a591f0;
+.container{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
 }
 
-.redes{
-  margin-top: 20px;
-  margin-left: 20px;
+body {
+  background: #a591f0;
+}
+
+.app-header {
+  background-color: #a591f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 24px;
+  position: relative;
+  box-shadow: 0px 0px 20px whitesmoke;
+}
+.app-header-left, .app-header-right {
+  display: flex;
+  align-items: center;
+}
+.app-header-left {
+  flex-grow: 1;
+}
+
+.app-name {
+  color: #ffffff;
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0 32px;
+  font-family:"Montserrat", sans-serif;
+}
+
+.add-btn {
+  color: #ffffff;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
+/*--Boton Inicio,Gradient--*/
+.btn{
+  color: #ffffff;
+  border: solid 4px;
+  border-image-source: linear-gradient(to bottom right,hotpink, rebeccapurple);
+  border-image-slice: 4;
+  font-family:"Montserrat", sans-serif;
+}
+
+.profile-btn {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  border-left: 2px solid #ddd;
+}
+.profile-btn img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.profile-btn span {
+  color: var(--main-color);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/*--Para Vista Celular--*/
+@media(max-width: 575px){
+  .container{
+    flex-direction: column;
+  }
+  .redes{
+
+    flex-direction: column;
+    align-items: center;
+  }
+  .redes img{
+    margin: 00.2em;
+  }
+}
