@@ -1,21 +1,38 @@
-<div class="row">
-  <div class="container-fluid">
-  <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    <img src="../../../assets/joha.png"class="img-fluid" id="fotoperfil">
-    <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
-    <h5><p id="full">Full Stack Developer Jr.</p></h5>
-  </div>
-  <!--Card Glass-->
-  <div class="card card-body" style="justify-content: center">
- <!-- col-xs-12 col-sm-8 col-md-8 col-lg-8" -->
-    <h1 class="about">About me</h1>
-    <div class="title_hr"></div>
-    <h5 class="about"><p>Diseño, rediseño y programo sitios y aplicaciones web, ya sea del lado del ciente(Front-end),
-      como del lado del servidor(Back-end).
-    Incorporando nuevos conocimientos, habilidades y tendencias tecnológicas en el campo del diseño y
-    desarrollo de aplicaciones web.</p></h5>
-</div>
-</div>
-</div>
+<section class="about_section">
+  <div class="about__container">
+
+    <img src={{persona.img}}  class="img_perfil ">
+
+    <span><h2 class="section-title">About me</h2></span>
+
+      <div id="agregar" id="about_icon" routerLink="/editaboutme/1" *ngIf="isLogged">
+        <i class='bx bxs-edit-alt' style="float:none; width: 80%; margin-top: 40px;"></i>
+      </div>
+      <br>
+
+      <h2 class="about__subtitle"><p class="about__subtitle">I'am {{persona.nombre}} {{persona.apellido}}</p></h2>
+    <h4>
+      <span class="about__profession">Full Stack Developer Jr.</span>
+    </h4>
+
+    <h4>
+      <span class="descripcion">
+      <p class="about__text" id="about">{{persona.descripcion}}</p>
+    </span>
+  </h4>
+
+    <div class="about__social">
+        <a href="https://www.linkedin.com/in/johanna-antonella-raffo-8a9564158/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+        <a href="https://github.com/johantonella" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
 
 

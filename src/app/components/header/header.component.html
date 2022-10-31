@@ -1,18 +1,39 @@
-<div class="row">
-  <div class="container">
-    <div class="app-header">
+<header class="header">
 
-      <div class="app-header-left">
-        <img width="120px" src="../../../assets/APLogo.png" id="logoAP">
-        <p class="app-name">My Portfolio</p>
+  <img width="120px" src="../../../assets/APLogo.png" style="float: left; margin-left: 10px;">
+
+  <input class="menu-btn" type="checkbox" id="menu-btn"/>
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+  <ul class="menu">
+    <li><a href="https://github.com/johantonella"><img  width="30px" margin-left="5%" src="https://img.icons8.com/ios/50/FFFFFF/github-2.png"/></a></li>
+    <li><a href="https://www.linkedin.com/in/johanna-antonella-raffo-8a9564158/"><img  width="30px" margin-left="5%" src="https://img.icons8.com/ios/50/FFFFFF/linkedin-2--v1.png"/></a></li>
+    <li><a href="mailto:raffojohanna@gmail.com"><img width="30px" margin-left="5%" src="https://img.icons8.com/ios/50/FFFFFF/gmail--v1.png"></a></li>
+
+
+    <button type="button" class="btn btn-outline" (click)="login()" *ngIf="!isLogged"><img margin-left="5%" width="30px" src="https://img.icons8.com/ios/50/FFFFFF/forgot-password.png"/></button>
+    <button type="button" class="btn btn-outline" (click)="onLogOut()" *ngIf="isLogged"><img margin-left="5%" width="30px" src="https://img.icons8.com/ios/100/FFFFFF/unlock.png" /></button>
+
+  </ul>
+</header>
+
+
+<!--HOME-->
+  <section class="home">
+    <div class="home__container">
+      <h1 class="home__title">
+        <br>
+        <span>HELLO!</span>
+        <br>
+      </h1>
+
+      <!--Scroll-->
+      <div class="home__scroll">
+        <a href="#about" class="home__scroll-link">
+          <i class='bx bx-up-arrow-alt'>
+          </i>My Portfolio</a>
+        </div>
       </div>
-
-      <div class="redes">
-        <a href="https://www.linkedin.com/in/johanna-antonella-raffo-8a9564158/"><img src="https://img.icons8.com/ios/50/FFFFFF/linkedin-2--v1.png"/></a>
-        <a href="https://github.com/johantonella"><img src="https://img.icons8.com/ios/50/FFFFFF/github-2.png"/></a>
-      </div>
-
-      <button type="button" class="btn btn-outline" (click)="login()" *ngIf="!isLogged">INGRESO</button>
-      <button type="button" class="btn btn-outline" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
-
+      <script src="https://unpkg.com/scrollreveal"></script>
+  </section>
 

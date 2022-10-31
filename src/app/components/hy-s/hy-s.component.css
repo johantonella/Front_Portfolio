@@ -1,75 +1,101 @@
-.row{
-  background: linear-gradient(270deg, #ffead1, #ffb6bd, #e0b5ff);
-  background-repeat: no-repeat;
-  background-attachment: local;
-  background-size: 150% 150%;
-  animation: backgroundAnimation 10s ease infinite;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  align-content: center;
-}
-
-.card {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); ;
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(5px);
-  margin: 100px;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.hys{
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-  padding: 50px;
-}
-.title_hr {
-  border: solid 3px #6945eb;
-  width: 100px;
-  margin-top: 20px;
-  margin-left: 0.2em;
-  position:relative;
-}
-
-.circulo{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* Button */
-.button-13 {
-  background-color: #fff;
-  border: 1px solid #d5d9d9;
-  border-radius: 8px;
-  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+* {
   box-sizing: border-box;
-  color: #0f1111;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Amazon Ember",sans-serif;
-  font-size: 13px;
-  line-height: 29px;
-  padding: 0 10px 0 11px;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  background-color: #fafaff;
+}
+::before, ::after {
+  box-sizing: border-box;
+}
+
+.section-title {
   position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2a3b47;
+  margin:  10px;
   text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  width: 100px;
 }
 
-.button-13:hover {
-  background-color: #f7fafa;
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 4px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 32px;
+  background-color: #5361ff;
 }
 
-.button-13:focus {
-  border-color: #eceeee;
-  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-  outline: 0;
+/*--SKILLS-*/
+.hys__container{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 8vh;
+  margin: 20px 0;
 }
+
+.circle-progress{
+  font-weight: bold;
+  display: flex;
+  padding: 1rem;
+  }
+
+#btn{
+  color: #697477;
+}
+
+#btn:hover{
+  color:#5361ff;
+}
+
+.hys-icon {
+  color: #697477;
+}
+.hys-icon:hover {
+  color:#5361ff;
+}
+
+/*Vista Multimedia*/
+
+  @media screen and (min-width: 390px){
+    .section-title::after {
+      position: absolute;
+      content: "";
+      width: 65px;
+      height: 4px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 60px;
+      background-color: #5361ff;
+  }
+
+  i{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px){
+    .section-title::after {
+        width: 64px;
+        top: 48px;
+      }
+    .section {
+        padding-top: 1px;
+      }
+
+      /*.hys__container {
+      flex-direction:column;
+    }*/
+  }
 

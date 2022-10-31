@@ -1,43 +1,38 @@
-<div class="row">
+<section class="proyectos_section" id="proyectos">
+  <div class="proyectos__container">
+    <span><h2 class="section-title">Proyectos</h2></span>
+    <br>
+    <br>
 
-  <!--Card Glass-->
-  <div class="card card-body" style="justify-content: center">
+    <ul class="cards text-center">
 
- <div class="proyectos" ><h1>Proyectos Realizados</h1>
-   <div class="title_hr"></div>
-   <br>
-
-
-<!--
-  <div class="col-lg-1"></div><div class="col-lg-11">
-
-    <div class="container">
-      <div class="row flex-center g-5 py-5">
-        <div class="col-lg-6">
-            <div>
-              <input id="formFileLg" type="file"(change)="subirArchivo($event)" class="form-control form-control-lg" >
-            </div>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://firebasestorage.googleapis.com/v0/b/front-porfolio-1bd40.appspot.com/o/images%2Fproyecto__1.jpg?alt=media&token=38ec6d1e-79ac-468d-a908-9c7a8598e37d" alt="web_page">
+          <div class="card_content">
+            <h2 class="card_title">Web Page</h2>
+            <p class="card_text">Diseño de web personal, utilizando HTML, CSS Y Javascript.</p>
+            <a href="https://jr-designer.netlify.app/" class="btn card_btn" role="button">More</a>
           </div>
         </div>
-      </div>
+        </div>
+      </li>
+
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="https://firebasestorage.googleapis.com/v0/b/front-porfolio-1bd40.appspot.com/o/images%2Fproyecto__2.jpg?alt=media&token=d1c1cca9-6b8f-4b10-96e2-c1dbb80f7884" alt="portfolio"></div>
+          <div class="card_content">
+            <h2 class="card_title">Portfolio Web</h2>
+            <p class="card_text">Proyecto Final, utilizando Angular y Base de Datos (Netbeans y Mysql).</p>
+            <button class="btn card_btn">More</button>
+          </div>
+        </div>
+      </li>
+
+      </ul>
+
+  </div>
 
 
-      <div class="container mb-5" >
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          -->
-          <div *ngFor="let image of images" class="col">
-            <div class="card h-100">
-              <img [src]="image" class="card-img-top" alt="...">
-              <p class="card-text align-center">PÁGINA WEB</p>
-              <p>Diseño y elaboracíon de una Web Page utilizando HTML, CSS Y JS.</p>
-            </div>
-            <!--
-            <br>
-            <br>
-            <div *ngFor="let image of images" class="col">
-              <div class="card h-100">
-                <img [src]="image" class="card-img-top" alt="...">
-                <p class="card-text align-center">PORTFOLIO WEB</p>
-              </div>
-            -->
+</section>
 

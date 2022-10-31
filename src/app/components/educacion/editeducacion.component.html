@@ -1,19 +1,16 @@
-<div class="container" *ngIf="educacion">
-  <div class="row">
-    <div>
+<section>
+  <div class="forms__container">
+    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" *ngIf="educacion">
 
-      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-        <div class="form-group">
-          <label for="nombreE"><h3>Nombre de la Institución</h3></label>
-          <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="educacion.nombreE" required>
-          <br>
-          <label for="descripcionE"><h3>Descripción de los Estudios</h3></label>
-          <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="educacion.descripcionE" required>
-          <br>
-          <br>
-          <button class="btn btn-secondary">Actualizar</button>
-        </div>
-      </form>
+      <label for="nombreE"><h3>Institución Educativa</h3></label>
+      <input type="text" class="form-control" placeholder="Institución" aria-label="Institucion" [(ngModel)]="educacion.nombreE" required>
+      <br>
+      <label for="descripcionE" class="form-label"><h3>Descripción de los Estudios</h3></label>
+      <textarea class="form-control" id="descripcionE" rows="3" name="descripcionE" placeholder="Descripcion" [(ngModel)]="educacion.descripcionE" required></textarea>
+      <br>
+      <div class="d-grid gap-2 col-6 mx-auto">
+      <button type="submit" class="btn btn-primary">Enviar</button>
     </div>
+    </form>
   </div>
-
+</section>

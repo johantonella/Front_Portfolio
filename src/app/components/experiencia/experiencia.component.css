@@ -1,70 +1,84 @@
-.row{
-  background: linear-gradient(270deg, #ffead1, #ffb6bd, #e0b5ff);
-  background-repeat: no-repeat;
-  background-attachment: local;
-  background-size: 150% 150%;
-  animation: backgroundAnimation 10s ease infinite;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  align-content: center;
-
-}
-
-.card {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); ;
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(5px);
-  margin: 8em;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.experiencia{
-  font-weight: 500px;
-  font-family: "Montserrat", sans-serif;
-  padding: 30px;
-}
-
-.title_hr {
-  border: solid 3px #6945eb;
-  width: 100px;
-  margin-top: 20px;
-  margin-left: 0.2em;
-  position:relative;
-}
-
-/* Button */
-.button-13 {
-  background-color: #fff;
-  border: 1px solid #d5d9d9;
-  border-radius: 8px;
-  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+* {
   box-sizing: border-box;
-  color: #0f1111;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Amazon Ember",sans-serif;
-  font-size: 13px;
-  line-height: 29px;
-  padding: 0 10px 0 11px;
+}
+
+:root{
+  background-color: #fafaff;
+}
+::before, ::after {
+  box-sizing: border-box;
+}
+
+.experiencia__container{
+  font-family: "Montserrat", sans-serif;
+  padding: 20vh;
+  justify-items: center;
+}
+.section-title {
   position: relative;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2a3b47;
+  margin:  10px;
   text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  width: 100px;
 }
 
-.button-13:hover {
-  background-color: #f7fafa;
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 4px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50px;
+  background-color: #5361ff;
 }
 
-.button-13:focus {
-  border-color: #eceeee;
-  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-  outline: 0;
+.nueva_experiencia{
+  position: relative;
+  margin: 2vh 0;
 }
+
+.tablas{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.table_subtitle{
+  color:#5361ff;
+  font-weight: bold;
+  padding: 2vh;
+}
+.table_name{
+  color:#697477;
+  padding: 2vh 0;
+  font-size: 3vh;
+}
+
+.exp-icon, #agregar {
+  color: #697477;
+  padding: 2vh 0;
+}
+
+.exp-icon:hover, #agregar {
+  color:#5361ff;
+}
+
+/*Vista Multimedia*/
+
+  @media screen and (min-width: 768px){
+  .experiencia__container {
+    align-items: center;
+    }
+  .section-title::after {
+      width: 64px;
+      top: 48px;
+  }
+  .section {
+      padding-top: 1px;
+    }
+  }
+

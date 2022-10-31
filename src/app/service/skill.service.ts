@@ -7,7 +7,9 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  URL = 'http://localhost:8080/skill/';
+  /*URL = 'https://portfolio-johanna-r.herokuapp.com/skill/';*/
+
+  URL= 'http://localhost:8080/skill/';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -26,6 +28,7 @@ export class SkillService {
   public update(id: number, skill: Skill): Observable<any>{
     return this.httpClient.put<any>(this.URL + `update/${id}`, skill);
   }
+
 
   public delete(id: number): Observable<any>{
     return this.httpClient.delete(this.URL + `delete/${id}`);

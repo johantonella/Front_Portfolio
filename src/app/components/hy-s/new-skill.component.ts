@@ -8,13 +8,18 @@ import { SkillService } from 'src/app/service/skill.service';
   templateUrl: './new-skill.component.html',
   styleUrls: ['./new-skill.component.css']
 })
+
 export class NewSkillComponent implements OnInit {
   nombre: string;
   porcentaje: number;
+  skill: Skill;
+  name: string;
+
 
   constructor(private skillS: SkillService, private router: Router) { }
 
   ngOnInit(): void {
+
   }
 
   onCreate(): void{
@@ -28,3 +33,6 @@ export class NewSkillComponent implements OnInit {
     })
   }
 }
+
+
+

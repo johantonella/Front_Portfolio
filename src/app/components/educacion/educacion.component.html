@@ -1,52 +1,56 @@
-<div class="row">
-  <div class="container-fluid">
+<section class="educacion_section" id="educacion">
+  <div class="educacion__container">
 
-      <!--Card Glass-->
-      <div class="card card-body" style="justify-content: center">
+    <span><h2 class="section-title">Educación</h2>
 
-        <div class="educacion" ><h1>Educación</h1>
-        <div class="title_hr"></div>
-        <br>
-        <div class="col-lg-2">
-          <br>
-          <button  class="button-13" role="button"routerLink="/nuevaedu" *ngIf="isLogged">Agregar</button>
-        </div>
+    <div id="agregar"  routerLink="/nuevaedu" *ngIf="isLogged"><i class='bx bxs-edit-alt' style="float:right;
+      width: 50%;"></i></div>
+      </span>
+    <br>
 
+    <span class="tablas">
+      <div class="nueva_educacion">
 
-<div class="col-lg-1"></div>
-<div class="col-lg-11">
-  <table class="table">
-    <tbody>
-      <tr *ngFor="let Educacion of educacion">
-        <td><h2>{{Educacion.nombreE}}</h2></td>
-        <td><h2>{{Educacion.descripcionE}}</h2></td>
-        <td *ngIf="isLogged">
-          <button class="btn" routerLink="/editedu/{{Educacion.id}}">
-            <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/pencil--v1.png"/></button></td>
+        <table class="table table-borderless">
+        <tbody>
+          <tr *ngFor="let Educacion of educacion">
+            <td>
+              <h4 class="table_subtitle">{{Educacion.nombreE}}</h4>
+            </td>
+            <td><h4 class="table_name">{{Educacion.descripcionE}}</h4></td>
 
-        <td *ngIf="isLogged">
-          <button class="btn" (click)="delete(Educacion.id)">
-            <img src="https://img.icons8.com/windows/32/FFFFFF/trash.png"/></button></td>
+            <td *ngIf="isLogged" class="edu-icon">
+              <button class="btn" routerLink="/editedu/{{Educacion.id}}">
+                <i class='bx bxs-edit-alt'></i>
+              </button>
+            </td>
+
+            <td *ngIf="isLogged" class="edu-icon">
+              <button class="btn" (click)="delete(Educacion.id)">
+                <i class='bx bx-trash-alt'></i>
+              </button>
+            </td>
+
+            <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
           </tr>
         </tbody>
       </table>
     </div>
+  </span>
 </div>
+</section>
+
+
 
 
     <!--
-    <span>
-      <div class="lista">
-      <h3><strong>CODO A CODO:"Desarrollador Full Stack JAVA"| En Curso</strong></h3>
-      <h3><p>Orientado a objetos concurrentes y tipeado estático</p></h3>
-      <br>
-      <h3><strong>ARGENTINA PROGRAMA:"Desarrollador Full Stack Jr."| 2022</strong></h3>
-      <h3><p>Conocimiento en lenguajes de programación de Front End, Back End, APIs y Bases de datos</p></h3>
-      <br>
-      <h3><strong>DOMESTIKA:"Diseño web creativo"| 2022</strong></h3>
-      <h3><p>Proceso de planificación, diseño, programación y lanzamiento de un sitio web atractivo, usando HTML, CSS y JavaScript<p></h3>
-      <br>
-      <br>
-    </div>
-  </span>
-</div>-->
+
+     CODO A CODO:"Desarrollador Full Stack JAVA"| En Curso
+      Orientado a objetos concurrentes y tipeado estático
+
+     ARGENTINA PROGRAMA:"Desarrollador Full Stack Jr."| 20222
+      Conocimiento en lenguajes de programación de Front End, Back End, APIs y Bases de datos
+
+ DOMESTIKA:"Diseño web creativo"| 2022
+    Proceso de planificación, diseño, programación y lanzamiento de un sitio web atractivo, usando HTML, CSS y JavaScript
+-->

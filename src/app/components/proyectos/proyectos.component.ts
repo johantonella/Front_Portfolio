@@ -6,11 +6,13 @@ import { Storage, ref, uploadBytes, listAll, getDownloadURL} from '@angular/fire
   templateUrl: './proyectos.component.html',
   styleUrls: ['./proyectos.component.css']
 })
+
 export class ProyectosComponent implements OnInit {
   images: string[] = [];
 
   constructor(private storage: Storage) { }
 
+  isLogged = false;
 
   ngOnInit(): void {
     this.getImages();
@@ -37,6 +39,9 @@ export class ProyectosComponent implements OnInit {
 
     }).catch(error => console.log(error));
   }
-}
+
+
+  }
+
 
 

@@ -24,12 +24,12 @@ export class HySComponent implements OnInit {
     }
   }
 
+
   cargarSkills(): void{
     this.skillS.lista().subscribe(data =>{
       this.skill = data;
     })
   }
-
   delete(id: number){
     if(id != undefined){
       this.skillS.delete(id).subscribe(data =>{
@@ -40,5 +40,6 @@ export class HySComponent implements OnInit {
     }
 
   }
+
 
 }
