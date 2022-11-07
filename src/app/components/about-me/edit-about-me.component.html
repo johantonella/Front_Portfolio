@@ -1,5 +1,5 @@
 <section>
-  <div class="forms__container">
+  <div class="forms__container" >
     <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" *ngIf="persona">
 
       <label for="nombre" ><h3>Nombre</h3></label>
@@ -12,7 +12,8 @@
       <textarea class="form-control" id="descripcion" rows="3" name="descripcion" placeholder="Descripcion" [(ngModel)]="persona.descripcion" required></textarea>
       <br>
       <label for="img"><h3>Imagen</h3></label>
-      <input type="file" class="form-control  form-control-sm" id="img" name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .png">
+      <input type="file" class="form-control form-control-sm" id="img" name="img"  [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .png">
+      <img [src]="imageService.url" width="100px"/>
       <br>
       <div class="d-grid gap-2 col-6 mx-auto">
       <button type="submit" class="btn btn-primary">Enviar</button>

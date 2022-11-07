@@ -20,10 +20,12 @@ import { NeweducacionComponent } from './components/educacion/neweducacion.compo
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
 import { EditSkillComponent } from './components/hy-s/edit-skill.component';
 import { NewSkillComponent } from './components/hy-s/new-skill.component';
+import { EditAboutMeComponent } from './components/about-me/edit-about-me.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
-import { EditAboutMeComponent } from './components/about-me/edit-about-me.component';
+
+
 
 @NgModule({
   declarations: [
@@ -53,9 +55,11 @@ import { EditAboutMeComponent } from './components/about-me/edit-about-me.compon
     HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideStorage(() => getStorage())
+
   ],
 
-  providers: [ ],
+  providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

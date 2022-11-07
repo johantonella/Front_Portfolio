@@ -30,6 +30,7 @@ export class HySComponent implements OnInit {
       this.skill = data;
     })
   }
+
   delete(id: number){
     if(id != undefined){
       this.skillS.delete(id).subscribe(data =>{

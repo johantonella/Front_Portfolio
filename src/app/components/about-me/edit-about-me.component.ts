@@ -13,12 +13,14 @@ import { PersonaService } from 'src/app/service/persona.service';
 export class EditAboutMeComponent implements OnInit {
   persona: persona = null;
 
-  constructor(private activatedRouter: ActivatedRoute, private personaService: PersonaService,
-    private router: Router, public imageService: ImageService ) { }
+  constructor(private activatedRouter: ActivatedRoute,
+     private personaService: PersonaService,
+    private router: Router, public imageService: ImageService) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.personaService.detail(id).subscribe(data =>{
+    this.personaService.detail(id).subscribe(
+      data =>{
       this.persona = data;
     }, err =>{
       alert("Error al modificar");
