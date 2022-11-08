@@ -1,6 +1,6 @@
-# PortfolioJR
+# Welcome to my Portfolio!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
+Proyecto generado en Angular CLI version 14.1.1.
 
 ## Development server
 
