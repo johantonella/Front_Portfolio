@@ -10,7 +10,7 @@
 }
 .section-title {
   position: relative;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   color: #2a3b47;
   text-align: center;
@@ -37,7 +37,6 @@
   margin: 8vh 8vh;
 }
 
-
   .cards {
     display: flex;
     flex-wrap: wrap;
@@ -50,8 +49,8 @@
     display: flex;
     padding: 1rem;
   }
-  img {
-    height: auto;
+  .card_image{
+    height: 100%;
     max-width: 100% ;
     vertical-align: middle;
   }
@@ -78,8 +77,6 @@
     font-family: "Montserrat", sans-serif;
     font-size: 0.875rem;
     line-height: 1.5;
-    margin-bottom: 1.25rem;
-    font-weight: 400;
   }
 
   @media (min-width: 40rem) {
@@ -112,13 +109,21 @@
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 390px){
+  .section-title {
+    position: relative;
+    font-size: 5vh;
+    font-weight: bold;
+    color: #2a3b47;
+    margin:  10px;
+    text-align: center;
+  }
   .section-title::after {
     position: absolute;
     content: "";
     width: 65px;
     height: 4px;
     margin: auto;
-    top: 60px;
+    top: 40px;
   }
 }
 
@@ -146,9 +151,9 @@
   }
 }
 
-
-
-.file-browse { margin-bottom: 5px; }
+.file-browse {
+   margin-bottom: 5px;
+}
 
 .button {
   background-color: cornflowerblue;
@@ -191,24 +196,3 @@
   width: 50%;
 }
 
-/*
-
-body{
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  background-color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-}
-.card{
-  background-image: url();
-  background-size: cover;
-  background-position: center;
-  width: 450px;
-  height: 300px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  cursor: pointer;
-}
-*/

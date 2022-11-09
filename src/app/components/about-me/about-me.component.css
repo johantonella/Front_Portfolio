@@ -62,7 +62,7 @@ a {
 }
 .section-title {
   position: relative;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   color: #2a3b47;
   margin:  10px;
@@ -101,7 +101,7 @@ a {
 @media screen and (min-width: 390px){
   .section-title {
     position: relative;
-    font-size: 6vh;
+    font-size: 5vh;
     font-weight: bold;
     color: #2a3b47;
     margin: 10px;
@@ -113,7 +113,7 @@ a {
     width: 65px;
     height: 4px;
     margin: auto;
-    top: 60px;
+    top: 40px;
   }
   .about__subtitle{
     font-size: 4vh;

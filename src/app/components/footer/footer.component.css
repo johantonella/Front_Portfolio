@@ -7,16 +7,7 @@
 *, ::before, ::after {
   box-sizing: border-box;
 }
-/*
-body {
-  font-family:'Montserrat', sans-serif;
-  justify-content: flex-end;
-  align-items: flex-end;
-  min-height: 100vh;
-  background: #2A3B47;
-  line-height: 1.6;
-}
-*/
+
 footer {
   font-family:'Montserrat', sans-serif;
   position: relative;
@@ -78,18 +69,6 @@ h6, p {
   color : #ffff;
   margin-top: 0.5em;
   margin-bottom: 0.1em;
-  font-size: 1em;
+  padding: 5px;
 }
 
-/*
-@media screen and (min-width: 768px){
-  footer .menu li a{
-    position: relative;
-    display: flex;
-    justify-content:space-evenly;
-    align-items:center;
-    margin: 10px 0;
-    flex-wrap: wrap;
-  }
-
-  }*/

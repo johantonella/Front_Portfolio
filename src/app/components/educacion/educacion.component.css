@@ -12,13 +12,12 @@
 
 .educacion__container{
   font-family: "Montserrat", sans-serif;
-  padding: 20vh;
   justify-items: center;
 }
 
 .section-title {
   position: relative;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   color: #2a3b47;
   margin:  10px;
@@ -72,13 +71,23 @@
 /***Media Queries***/
 
 @media screen and (min-width: 390px){
-.section-title::after {
+
+  .section-title {
+    position: relative;
+    font-size: 5vh;
+    font-weight: bold;
+    color: #2a3b47;
+    margin:  10px;
+    text-align: center;
+  }
+
+  .section-title::after {
   position: absolute;
   content: "";
   width: 65px;
   height: 4px;
   margin: auto;
-  top: 60px;
+  top: 40px;
 }
 }
 
