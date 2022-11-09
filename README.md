@@ -1,27 +1,44 @@
-# PortfolioJR
+<h1 align="center">Welcome to my Portfolio!</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
 
-## Development server
+## Descripción del Proyecto realizado para Argentina Programa
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+El objetivo era desarrollar una aplicación web full stack, que mostrara: datos personales, estudios cursados, experiencia laboral y conocimiento de las
+tecnologías. Esta aplicación debía ser de arquitectura distribuida y contener un diseño de interfaz de usuario (front end) que muestre la información, una base de datos que almacene los datos antes mencionados y debe contar con las APIs necesarias para proveer a través de internet la información (back end).
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Tecnologías Utilizadas
 
+ ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+ ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+ ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+ ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+ ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+ 
+ Para Pruebas:    ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+ 
+ 
+ ## Deploy
+ ![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+ 
+ ## Acceso al proyecto
+ 
+ 
+ 
+Servidor de Desarrollo
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+ 
+Servidor de Producción
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Estado del Proyecto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ <p align="left">
+   <img src="https://img.shields.io/badge/STATUS-FINALIZADO%20-blue">
+   </p>  
+   
+   
+   Link directo a Mi Portfolio: https://portfolio-jr-1cf05.web.app/
