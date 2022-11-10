@@ -170,7 +170,7 @@ a {
 }
 
 .home__title span {
-  font-size: 168px;
+font-size: 168px;
 font-family: 'Montserrat', sans-serif;
 }
 .section {
@@ -198,7 +198,6 @@ font-family: 'Montserrat', sans-serif;
     margin: 0;
   }
   .home__container {
-    height: 50vh;
     grid-template-rows: 1.7fr 1fr;
     row-gap: 0;
   }
@@ -255,3 +254,4 @@ font-family: 'Montserrat', sans-serif;
     row-gap: 0;
   }
 }
+

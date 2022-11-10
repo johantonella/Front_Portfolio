@@ -36,7 +36,7 @@
 
 .nueva_experiencia{
   position: relative;
-  margin: 2vh 0;
+  margin: 8vh;
 }
 
 .tablas{
@@ -50,10 +50,11 @@
   color:#5361ff;
   font-weight: bold;
   padding: 2vh;
+  font-size: 3vh;
 }
 .table_name{
   color:#697477;
-  padding: 2vh 0;
+  padding: 2vh;
   font-size: 3vh;
 }
 
@@ -67,6 +68,30 @@
 }
 
 /*Vista Multimedia*/
+@media screen and (min-width: 290px){
+  .table_name{
+  color:#697477;
+  padding: 2vh;
+  font-size: 1.8vh;
+  }
+
+  .table_subtitle{
+    color:#5361ff;
+    font-weight: bold;
+    padding: 2vh;
+    font-size: 1.8vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 390px){
 
   .section-title {
@@ -86,11 +111,26 @@
   margin: auto;
   top: 40px;
 }
+
+.table_name{
+font-size: 2.4vh;
+color: #697477;
+padding: 2vh 0;
+}
+
+.table_subtitle{
+  font-size: 3vh;
+}
+.exp-icon, #agregar {
+  color: #697477;
+  padding:2vh 0;
+}
 }
 
   @media screen and (min-width: 768px){
   .experiencia__container {
     align-items: center;
+    padding: 100px 0;
     }
   .section-title::after {
       width: 64px;

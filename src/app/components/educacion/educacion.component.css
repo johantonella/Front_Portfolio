@@ -12,7 +12,7 @@
 
 .educacion__container{
   font-family: "Montserrat", sans-serif;
-  justify-items: center;
+  justify-content: center;
 }
 
 .section-title {
@@ -38,7 +38,7 @@
 
 .nueva_educacion{
   position: relative;
-  margin: 2vh 0;
+  margin: 8vh;
 }
 
 .tablas{
@@ -51,7 +51,8 @@
 .table_subtitle{
   font-weight: bold;
   color:#5361ff;
-  padding: 2vh
+  padding: 2vh;
+  font-size: 3vh;
 }
 .table_name{
   color:#697477;
@@ -69,6 +70,22 @@
 }
 
 /***Media Queries***/
+
+@media screen and (min-width: 290px){
+  .table_name{
+  color:#697477;
+  padding: 2vh;
+  font-size: 1.8vh;
+  }
+
+  .table_subtitle{
+    color:#5361ff;
+    font-weight: bold;
+    padding: 2vh;
+    font-size: 1.8vh;
+  }
+}
+
 
 @media screen and (min-width: 390px){
 
@@ -89,11 +106,22 @@
   margin: auto;
   top: 40px;
 }
+.table_name{
+  font-size: 2.4vh
+  }
+  .table_subtitle{
+    font-size: 3vh;
+  }
+  .edu-icon, #agregar {
+    color: #697477;
+    padding:2vh 0;
+  }
 }
 
  @media screen and (min-width: 768px){
   .educacion__container {
     align-items: center;
+    padding: 100px 0;
     }
 
   .section-title::after {
@@ -102,6 +130,10 @@
     }
   .section {
       padding-top: 1px;
+    }
+    .edu-icon, #agregar {
+      color: #697477;
+      padding:2vh 0;
     }
   }
 

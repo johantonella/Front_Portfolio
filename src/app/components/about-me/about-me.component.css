@@ -33,12 +33,11 @@ a {
 
 /* ===== ABOUT =====*/
 .about__container {
-  font-family: "Montserrat", sans-serif;
   padding: 8vh;
   text-align:center;
 }
 .about__subtitle {
-  font-size: 5vh;
+  font-size: 3.8vh;
   font-weight: bold;
   color:#5361ff;
   margin-bottom:auto;
@@ -98,6 +97,7 @@ a {
 }
 
 /*MEDIA QUERIES*/
+
 @media screen and (min-width: 390px){
   .section-title {
     position: relative;
@@ -115,6 +115,7 @@ a {
     margin: auto;
     top: 40px;
   }
+
   .about__subtitle{
     font-size: 4vh;
   }
@@ -141,5 +142,6 @@ a {
   .about__text{
     font-size: 20vh;
   }
+
 }
 

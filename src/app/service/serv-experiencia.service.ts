@@ -7,7 +7,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class ServExperienciaService {
-//expURL = 'https://back-portfolio-ap.herokuapp.com/explab/';//
+//expURL = 'https://back-portfolio-ap.herokuapp.com/explab/';
 
 expURL= 'http://localhost:8080/explab/';
 
